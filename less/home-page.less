@@ -1,0 +1,62 @@
+*{
+    box-sizing: border-box;
+}
+.photosection{
+    background-image: url(/images/gym-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    .photosection-inside{
+        background: rgba(227,24,55,0.6);
+        position: relative;
+        width: 50%;
+        height: 60%;
+        left: 400px;
+        right: 300px;
+        top: 110px;
+        bottom: 100px;
+        h1{
+            text-align: center;
+            text-emphasis: bold;
+            font-family: 'Anton', sans-serif;
+            font-size: 3vw;
+            color: black;
+            padding-top: 17px;
+        }
+        p {
+            color: white;
+            line-height: 1.5;
+            padding-left: 10px;
+            padding-top: 10px;
+            font-size: 1.7vw;
+          span{
+              color: black;
+              font-size: 2vw;
+              text-emphasis: bold;
+            font-family: 'Anton', sans-serif;
+          }
+        }
+        
+    }
+}
+
+.middlesection{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    a{
+        -webkit-text-stroke: 1px @redofchoice;
+        color: white;
+        font-size: 2.5rem;
+        background: @redofchoice;
+        padding: 10px;
+        border-radius: 20px;
+        // box-shadow: 1px 1px 1px 1px black;
+        &:hover{
+         
+           box-shadow: 2px 2px 2px 2px gray;
+             text-decoration: none;
+        }
+    }
+}
