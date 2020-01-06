@@ -1,0 +1,36 @@
+
+.header{
+	height: 20vh;
+
+	nav{
+		margin-top: 80px;
+		height: 3vh;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		a{
+		text-decoration: none;
+		font-family: @fontofchoice; 
+		color: black;
+		font-size: 1.5vw;
+			&:hover{
+				color: @redofchoice;
+				text-decoration: underline;
+				font-size: 3vw;
+			}
+			
+			
+		}
+		.logo{
+			height: 180px;
+			width: 180px;
+			border-radius: 90px;
+			box-shadow: 2px 2px 2px black;
+			&:hover{
+				transition: 1.5s;
+  				transform: rotate(360deg);
+			}
+		}
+
+	}
+}
