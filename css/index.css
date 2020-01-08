@@ -1,0 +1,343 @@
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.header {
+  height: 20vh;
+}
+.header nav {
+  margin-top: 80px;
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.header nav a {
+  text-decoration: none;
+  font-family: 'Fjalla One', sans-serif;
+  color: black;
+  font-size: 1.5vw;
+}
+.header nav a:hover {
+  color: #E31837;
+  text-decoration: underline;
+  font-size: 3vw;
+}
+.header nav .logo {
+  height: 180px;
+  width: 180px;
+  border-radius: 90px;
+  box-shadow: 2px 2px 2px black;
+}
+.header nav .logo:hover {
+  transition: 1.5s;
+  transform: rotate(360deg);
+}
+* {
+  box-sizing: border-box;
+}
+.photosection {
+  background-image: url(/images/gym-background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+}
+.photosection .photosection-inside {
+  background: rgba(227, 24, 55, 0.6);
+  left: 400px;
+  width: 50vw;
+  height: 60%;
+  position: relative;
+  right: 700px;
+  top: 110px;
+  bottom: 100px;
+}
+.photosection .photosection-inside h1 {
+  position: absolute;
+  top: 80px;
+  right: 190px;
+  left: 150px;
+  text-align: center;
+  text-emphasis: bold;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3vw;
+  color: white;
+  line-height: 60px;
+}
+.photosection .photosection-inside h2 {
+  font-size: 3rem;
+  color: gray;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  margin: 5px;
+}
+.photosection .photosection-inside-aboutus {
+  height: 100%;
+}
+.photosection a {
+  text-decoration: none;
+  font-size: 1.6vw;
+  position: relative;
+  top: 240px;
+  left: 230px;
+  padding: 16px 80px;
+  border-radius: 10px;
+  background: #0fbe63;
+  color: white;
+}
+.photosection a:hover {
+  cursor: pointer;
+  background: #085f32;
+}
+.middlesection {
+  background-image: url(/images/pf.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+  height: 80vh;
+  width: 99vw;
+}
+.middlesection .middlesection-inside {
+  background: rgba(0, 0, 0, 0.7);
+  left: 730px;
+  width: 50vw;
+  height: 60%;
+  position: relative;
+  right: 700px;
+  top: 110px;
+  bottom: 100px;
+  height: 99.9%;
+  top: 0px;
+}
+.middlesection .middlesection-inside h1 {
+  position: absolute;
+  top: 80px;
+  right: 190px;
+  left: 150px;
+  text-align: center;
+  text-emphasis: bold;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3vw;
+  color: white;
+  line-height: 60px;
+}
+.middlesection .middlesection-inside h2 {
+  font-size: 3rem;
+  color: gray;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  margin: 5px;
+}
+.middlesection .middlesection-inside h1 {
+  font-size: 1.5vw;
+}
+.middlesection .middlesection-inside a {
+  text-decoration: none;
+  font-size: 1.6vw;
+  position: relative;
+  top: 500px;
+  left: 260px;
+  padding: 20px 80px;
+  border-radius: 10px;
+  background: #0fbe63;
+  color: white;
+}
+.middlesection .middlesection-inside a:hover {
+  cursor: pointer;
+  background: #085f32;
+}
+.middlesection2 {
+  background-image: url(/images/peopleworkout.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 30px;
+  height: 80vh;
+  width: 99vw;
+}
+.middlesection2 .middlesection2-inside {
+  background: rgba(0, 0, 0, 0.7);
+  left: 0px;
+  width: 50vw;
+  height: 60%;
+  position: relative;
+  right: 700px;
+  top: 110px;
+  bottom: 100px;
+  height: 99.9%;
+  top: 0px;
+}
+.middlesection2 .middlesection2-inside h1 {
+  position: absolute;
+  top: 80px;
+  right: 190px;
+  left: 150px;
+  text-align: center;
+  text-emphasis: bold;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 3vw;
+  color: white;
+  line-height: 60px;
+}
+.middlesection2 .middlesection2-inside h2 {
+  font-size: 3rem;
+  color: gray;
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  margin: 5px;
+}
+.middlesection2 .middlesection2-inside h1 {
+  font-size: 1.5vw;
+}
+.middlesection2 .middlesection2-inside a {
+  text-decoration: none;
+  font-size: 1.6vw;
+  position: relative;
+  top: 530px;
+  left: 230px;
+  padding: 16px 80px;
+  border-radius: 10px;
+  background: #0fbe63;
+  color: white;
+}
+.middlesection2 .middlesection2-inside a:hover {
+  cursor: pointer;
+  background: #085f32;
+}
+.middlesection2 .middlesection2-inside h2 {
+  left: 160px;
+}
