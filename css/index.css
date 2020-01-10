@@ -147,7 +147,12 @@ table {
   text-decoration: none;
   font-family: 'Fjalla One', sans-serif;
   color: black;
-  font-size: 1.5vw;
+  font-size: 1.5rem;
+}
+@media (max-width:800px) {
+  .header nav a {
+    font-size: 1rem;
+  }
 }
 .header nav a:hover {
   color: #E31837;
@@ -156,13 +161,29 @@ table {
 }
 .header nav .logo {
   height: 180px;
-  width: 180px;
+  width: 190px;
   border-radius: 90px;
-  box-shadow: 2px 2px 2px black;
+}
+@media (max-width:800px) {
+  .header nav .logo {
+    height: 80px;
+    width: 90px;
+  }
 }
 .header nav .logo:hover {
   transition: 1.5s;
   transform: rotate(360deg);
+}
+.footer {
+  background: #0E76BC;
+  height: 5%;
+  margin-top: 5%;
+}
+.footer p {
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  vertical-align: middle;
 }
 * {
   box-sizing: border-box;
@@ -171,107 +192,143 @@ table {
   background-image: url(/images/gym-background.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  height: 60vh;
+  margin-top: 4%;
+  height: 30rem;
+  position: relative;
 }
 .photosection .photosection-inside {
   background: rgba(227, 24, 55, 0.6);
-  left: 400px;
-  width: 50vw;
-  height: 60%;
+  width: 50%;
+  height: 10rem;
   position: relative;
-  right: 700px;
-  top: 110px;
-  bottom: 100px;
+  top: 35%;
+  left: 30%;
+  right: 50%;
 }
 .photosection .photosection-inside h1 {
-  position: absolute;
-  top: 80px;
-  right: 190px;
-  left: 150px;
+  left: 4%:
+        position: relative;
   text-align: center;
   text-emphasis: bold;
   font-family: 'Fjalla One', sans-serif;
+  margin-bottom: 4%;
   font-size: 3vw;
   color: white;
   line-height: 60px;
 }
+@media (max-width:800px) {
+  .photosection .photosection-inside h1 {
+    font-size: 5vw;
+  }
+}
 .photosection .photosection-inside h2 {
   font-size: 3rem;
   color: gray;
-  position: absolute;
   top: 20px;
   right: 100px;
   margin: 5px;
+  text-decoration: underline;
+  text-decoration-color: #E31837;
 }
-.photosection .photosection-inside-aboutus {
-  height: 100%;
-}
-.photosection a {
+.photosection .photosection-inside a {
   text-decoration: none;
-  font-size: 1.6vw;
+  font-size: 1.2rem;
   position: relative;
-  top: 240px;
-  left: 230px;
-  padding: 16px 80px;
+  left: 30%;
+  padding: 2% 3%;
+  margin: 0 auto;
   border-radius: 10px;
   background: #0fbe63;
   color: white;
 }
-.photosection a:hover {
+.photosection .photosection-inside a:hover {
   cursor: pointer;
   background: #085f32;
+}
+.photosection2 {
+  background-image: url(/images/gym-background.jpeg);
+  height: 100%;
+}
+.photosection2 .text {
+  background: rgba(0, 0, 0, 0.6);
+}
+.photosection2 h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.photosection2 p {
+  color: white;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+.photosection2 span {
+  border: 5px dotted #E31837;
 }
 .middlesection {
   background-image: url(/images/pf.png);
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 30px;
-  height: 80vh;
-  width: 99vw;
+  height: 100%;
+  width: 100%;
 }
 .middlesection .middlesection-inside {
   background: rgba(0, 0, 0, 0.7);
-  left: 730px;
-  width: 50vw;
-  height: 60%;
+  width: 50%;
+  height: 10rem;
   position: relative;
-  right: 700px;
-  top: 110px;
-  bottom: 100px;
-  height: 99.9%;
-  top: 0px;
+  top: 35%;
+  left: 30%;
+  right: 50%;
+  left: 48%;
+  top: 0;
+  height: 100%;
 }
 .middlesection .middlesection-inside h1 {
-  position: absolute;
-  top: 80px;
-  right: 190px;
-  left: 150px;
+  left: 4%:
+        position: relative;
   text-align: center;
   text-emphasis: bold;
   font-family: 'Fjalla One', sans-serif;
+  margin-bottom: 4%;
   font-size: 3vw;
   color: white;
   line-height: 60px;
 }
+@media (max-width:800px) {
+  .middlesection .middlesection-inside h1 {
+    font-size: 5vw;
+  }
+}
 .middlesection .middlesection-inside h2 {
   font-size: 3rem;
   color: gray;
-  position: absolute;
   top: 20px;
   right: 100px;
   margin: 5px;
+  text-decoration: underline;
+  text-decoration-color: #E31837;
+}
+.middlesection .middlesection-inside h2 {
+  font-size: 3rem;
 }
 .middlesection .middlesection-inside h1 {
-  font-size: 1.5vw;
+  font-size: 2.4rem;
+  line-height: 1.7;
+}
+@media (max-width:800px) {
+  .middlesection .middlesection-inside h1 {
+    font-size: 1.4rem;
+  }
 }
 .middlesection .middlesection-inside a {
   text-decoration: none;
-  font-size: 1.6vw;
+  font-size: 1.6rem;
   position: relative;
-  top: 500px;
-  left: 260px;
-  padding: 20px 80px;
+  left: 40%;
+  padding: 2% 3%;
   border-radius: 10px;
   background: #0fbe63;
   color: white;
@@ -285,51 +342,64 @@ table {
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 30px;
-  height: 80vh;
-  width: 99vw;
+  height: 100%;
+  width: 100%;
 }
 .middlesection2 .middlesection2-inside {
   background: rgba(0, 0, 0, 0.7);
-  left: 0px;
-  width: 50vw;
-  height: 60%;
+  width: 50%;
+  height: 10rem;
   position: relative;
-  right: 700px;
-  top: 110px;
-  bottom: 100px;
-  height: 99.9%;
-  top: 0px;
+  top: 35%;
+  left: 30%;
+  right: 50%;
+  left: 48%;
+  top: 0;
+  height: 100%;
 }
 .middlesection2 .middlesection2-inside h1 {
-  position: absolute;
-  top: 80px;
-  right: 190px;
-  left: 150px;
+  left: 4%:
+        position: relative;
   text-align: center;
   text-emphasis: bold;
   font-family: 'Fjalla One', sans-serif;
+  margin-bottom: 4%;
   font-size: 3vw;
   color: white;
   line-height: 60px;
 }
+@media (max-width:800px) {
+  .middlesection2 .middlesection2-inside h1 {
+    font-size: 5vw;
+  }
+}
 .middlesection2 .middlesection2-inside h2 {
   font-size: 3rem;
   color: gray;
-  position: absolute;
   top: 20px;
   right: 100px;
   margin: 5px;
+  text-decoration: underline;
+  text-decoration-color: #E31837;
+}
+.middlesection2 .middlesection2-inside h2 {
+  font-size: 3rem;
 }
 .middlesection2 .middlesection2-inside h1 {
-  font-size: 1.5vw;
+  font-size: 2.4rem;
+  line-height: 1.7;
+}
+@media (max-width:800px) {
+  .middlesection2 .middlesection2-inside h1 {
+    font-size: 1.4rem;
+  }
 }
 .middlesection2 .middlesection2-inside a {
   text-decoration: none;
-  font-size: 1.6vw;
+  font-size: 1.6rem;
   position: relative;
-  top: 530px;
-  left: 230px;
-  padding: 16px 80px;
+  left: 40%;
+  padding: 2% 3%;
   border-radius: 10px;
   background: #0fbe63;
   color: white;

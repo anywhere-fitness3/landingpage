@@ -1,7 +1,6 @@
 
 .header{
 	height: 20vh;
-
 	nav{
 		margin-top: 80px;
 		height: 3vh;
@@ -12,7 +11,10 @@
 		text-decoration: none;
 		font-family: @fontofchoice; 
 		color: black;
-		font-size: 1.5vw;
+		font-size: 1.5rem;
+		    @media @tablet{
+				font-size: 1rem;
+			}
 			&:hover{
 				color: @redofchoice;
 				text-decoration: underline;
@@ -23,9 +25,12 @@
 		}
 		.logo{
 			height: 180px;
-			width: 180px;
+			width: 190px;
 			border-radius: 90px;
-			box-shadow: 2px 2px 2px black;
+		 @media @tablet{
+			 height:80px;
+			 width: 90px;
+		 }
 			&:hover{
 				transition: 1.5s;
   				transform: rotate(360deg);
