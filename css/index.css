@@ -337,6 +337,24 @@ table {
   cursor: pointer;
   background: #085f32;
 }
+#meettheteam {
+  color: black;
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 2%;
+}
+.team {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 3%;
+}
+.team img {
+  width: 70%;
+}
+.team h1 {
+  margin: 1% 1% 1% 1%;
+}
 .middlesection2 {
   background-image: url(/images/peopleworkout.jpg);
   background-repeat: no-repeat;
